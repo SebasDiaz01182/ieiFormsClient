@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+  }
+  
+  .workshop-form {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    position: relative;
+  }
+  
+  .workshop-form h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .workshop-form .inputBox {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    z-index: 1;
+  }
+  
+  .inputBox input:focus ~ span,
+  .inputBox input:not(:placeholder-shown) ~ span {
+    transform: translateY(-22px);
+    font-size: 14px;
+    color: #4a90e2;
+    font-weight: 600;
+  }
+  
+  .inputBox input:focus,
+  .inputBox input:not(:placeholder-shown) {
+    border-bottom: 1px solid #4a90e2;
+  }
+  
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    font-size: 16px;
+    color: #999;
+    transition: 0.2s;
+    z-index: 1;
+  }
+  
+  .inputBox i {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 1;
+  }
+  
+  .inputBox i:hover {
+    background-color: #333;
+  }
+  
+  .inputBox input[type="password"]::-webkit-text-security-disc,
+  .inputBox input[type="password"]::-webkit-text-security-circle,
+  .inputBox input[type="password"]::-webkit-text-security-square,
+  .inputBox input[type="password"]::-moz-Webkit-appearance {
+    -webkit-text-security: disc;
+    -moz-Webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  input[type="submit"] {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #333;
+  }
